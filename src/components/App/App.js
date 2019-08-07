@@ -5,8 +5,9 @@ import Header from '../Header/Header';
 import LandingPage from '../Landing/Landing';
 //import LoginForm from '../LoginForm/LoginForm';
 import ProjectFeed from '../ProjectFeed/ProjectFeed';
-import UserHome from '../UserHome/UserHome';
-//import DummyData from '../../DummyData';
+//import UserHome from '../UserHome/UserHome';
+import AddProject from '../ProjectFeed/AddProject';
+
 
 export default class App extends Component {
   constructor(props) {
@@ -32,10 +33,9 @@ export default class App extends Component {
         <main className='App'>
         <Switch>
           <Route exact path={'/'} component={LandingPage} />
-          {/* <Route path={'/login'} component={LoginForm} /> */}
-          {/*add, add component here*/}
           <Route path={'/feed'} render={() => <ProjectFeed arrProjects={this.state.projects} setHotdog={this.setProjects}/>} />
-          <Route path={'/home'} component={UserHome} />
+          {/* <Route path={'/home'} component={UserHome} /> */}
+          <Route path={'/addproject'} component={AddProject} />
         </Switch>
         </main>
       </div>

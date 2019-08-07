@@ -20,9 +20,7 @@ export default class ProjectFeed extends Component {
     return (
     <>
       <h1>Makers Place Feed</h1>
-
-      <Link to='/'>Landing-</Link>
-      <Link to='/home'>MyHome</Link>
+      <Link to ='/addproject'><button>Add Project</button></Link>
 
         {this.props.arrProjects.map(proj => {
           return (
