@@ -34,7 +34,7 @@ export default class App extends Component {
           <Route exact path={'/'} component={LandingPage} />
           {/* <Route path={'/login'} component={LoginForm} /> */}
           {/*add, add component here*/}
-          <Route path={'/feed'} render={() => <ProjectFeed projects={this.state.projects} setProjects={this.setProjects}/>} />
+          <Route path={'/feed'} render={() => <ProjectFeed arrProjects={this.state.projects} setHotdog={this.setProjects}/>} />
           <Route path={'/home'} component={UserHome} />
         </Switch>
         </main>
