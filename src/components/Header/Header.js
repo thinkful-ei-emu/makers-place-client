@@ -5,13 +5,8 @@ export default class Header extends Component {
   render() {
     return <>
     <nav className='Header'>
-      <h1>
-        {/* <Link to='/'>
-          {' '}
-          Makers Place
-        </Link> */}
-        Makers Place
-      </h1>
+      <h1>Makers Place</h1>
+      
     </nav>
     </>  
   }

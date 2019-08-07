@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class LoginForm extends Component {
 
@@ -14,8 +15,10 @@ export default class LoginForm extends Component {
         <input type='text' name='Password' value='Password'></input><br/>
         <input type='Submit' value='Submit'></input>
       </div> 
-
       </form>
+      <Link to='/feed'>
+        <button>Skip</button>
+      </Link>
     </>
     )
   }

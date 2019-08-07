@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Landing extends Component {
 
@@ -12,7 +13,9 @@ export default class Landing extends Component {
         After a succseful login you will be taken to the main feed for Makers Place.
         From there you can view all posted projects and rate the projects.
       </p>
-      <button>Continue</button>
+      <Link to='/feed'>
+        <button>Continue</button>
+      </Link>
     </>
     )
   }
