@@ -21,15 +21,17 @@ export default class App extends Component {
     this.setState({ projects:list })
   }
 
+  // postProjects = adding => {
+  //   this.setState({  })
+  // }
+
   render() {
     return ( 
       <div className="App">
         <header className='App_Header'>
           <Header/>
         </header>
-
-        {/* <ProjectFeed store={this.state.store.projects}/>*/}
-         
+        
         <main className='App'>
         <Switch>
           <Route exact path={'/'} component={LandingPage} />
