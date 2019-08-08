@@ -4,11 +4,11 @@ export default class AddProject extends React.Component {
   constructor() {
     super();
 
-
-
     this.state = {
       title: '',
-      description: ''
+      description: '',
+      img_url: '',
+      error: ''
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,43 +26,62 @@ export default class AddProject extends React.Component {
     });
   }
 
+  imgURLChanged(img_url) {
+    this.setState({
+      img_url
+    });
+  }
+
   handleSubmit(e) {
     e.preventDefault();
-    // const data = //form data;
-    console.log('im in handle submit')
-    console.log(this.state.title)
-    console.log(this.state.description)
-    const newProj = {
-      title: this.state.title,
-      description: this.state.description
-    }
-    console.log(newProj)
-    fetch('http://localhost:8000/api/projects', {
+    const url = 'http://localhost:8000/api/projects';
+    const newProj = {title: this.state.title, description: this.state.description, img_url: this.state.img_url}
+    const options = {
       method: 'POST',
+      body: JSON.stringify(newProj),
       headers: {
         'content-type': 'application/json'
-      },
-      body: JSON.stringify(newProj)
-  })
-    .then(res =>
-      (!res.ok)
-      ? res.json().then(e => Promise.reject(e))
-      : res.json()
-      )
-    }
+      }
+    };
+    
+    fetch(url, options)
+      .then(res => {
+        if(!res.ok) {
+          throw new Error('Something went wrong, please try again later')
+        }
+        this.props.history.push('/feed')
+        return res.json()
+      })
+      .catch(err => {
+        this.setState({
+          error: err.message
+        });
+      })
+     }
 
   render() {
+    const error = this.state.error
+      ? <div className='error'>{this.state.error}</div>
+      : '';
+
     return (
       <>
+      <h3>Add a new project!</h3>
+      {error}
       <form onSubmit={this.handleSubmit}>
         
         <label htmlFor='Title'>Title:</label>
         <input id='formTitle' name='title' type='text' value={this.state.title}
-        onChange={e => this.titleChanged(e.target.value)}/>
+        onChange={e => this.titleChanged(e.target.value)} required/>
         
         <label htmlFor='description'>Description:</label>
-        <input id='fromDescription' name='description'type='text' value={this.state.description}
-        onChange={e => this.descriptionChanged(e.target.value)} />
+        <input id='formDescription' name='description'type='text' value={this.state.description}
+        onChange={e => this.descriptionChanged(e.target.value)} required />
+
+        <label htmlFor='img_url'>Image URL</label>
+        <input id='formIMG' name='img_url'type='url' value={this.state.img_url}
+        onChange={e => this.imgURLChanged(e.target.value)} required />
+
         <button>Submit</button>
         
       </form>

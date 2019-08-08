@@ -31,11 +31,11 @@ export default class App extends Component {
         <header className='App_Header'>
           <Header/>
         </header>
-        
+
         <main className='App'>
         <Switch>
           <Route exact path={'/'} component={LandingPage} />
-          <Route path={'/feed'} render={() => <ProjectFeed arrProjects={this.state.projects} setHotdog={this.setProjects}/>} />
+          <Route path={'/feed'} render={(props) => <ProjectFeed {...props} arrProjects={this.state.projects} setHotdog={this.setProjects}/>} />
           {/* <Route path={'/home'} component={UserHome} /> */}
           <Route path={'/addproject'} component={AddProject} />
         </Switch>

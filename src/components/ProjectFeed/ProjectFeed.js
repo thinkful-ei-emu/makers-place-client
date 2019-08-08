@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import './ProjectFeed.css';
 
 export default class ProjectFeed extends Component {
 
@@ -10,25 +11,26 @@ export default class ProjectFeed extends Component {
       .then(data => {
         this.props.setHotdog(data)
       })
+      .catch(error => {
+        console.log(error);
+      })
   }
-  
-//no db, show data using .map for array of obj's in render.
-//use data from server stored in state. map over it. display information on the page.
 
   render() {
     console.log(this.props.arrProjects);
     return (
     <>
       <h1>Makers Place Feed</h1>
-      <Link to ='/addproject'><button>Add Project</button></Link>
-
+      
         {this.props.arrProjects.map(proj => {
           return (
             <div className='ProjectFeedItem_details' key={proj.id}>
               <h3 className='ProjectFeedItem_title'>{proj.title}</h3>
               <p className='ProjectFeedItem_description'>{proj.description}</p>
+              <p className='ProjectFeedItem_img_url'> 
+                <img src={proj.img_url} alt="Smiley face" width='500px' height='400px'/> 
+              </p>
                 <div className='ProjectFeedItem_rate'>
-                  <p>[IMG]</p>
                 </div>
             </div>
           )
