@@ -1,5 +1,6 @@
-import React from 'react'
-import './AddProject.css'
+import React from 'react';
+import './AddProject.css';
+import TokenService from '../../services/token-service';
 
 export default class AddProject extends React.Component {
   constructor() {
@@ -41,7 +42,8 @@ export default class AddProject extends React.Component {
       method: 'POST',
       body: JSON.stringify(newProj),
       headers: {
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'authorization': `bearer ${TokenService.getAuthToken()}`,
       }
     };
     
