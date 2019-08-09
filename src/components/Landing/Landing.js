@@ -14,7 +14,7 @@ export default class Landing extends Component {
         After a succseful login you will be taken to the main feed for Makers Place.
         From there you can view all posted projects and rate the projects.
       </p>
-      <Link to='/feed'>
+      <Link to='/login'>
         <button>Continue</button>
       </Link>
     </div>

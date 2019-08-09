@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from '../Header/Header';
 import LandingPage from '../Landing/Landing';
-//import LoginForm from '../LoginForm/LoginForm';
+import LoginForm from '../LoginForm/LoginForm';
 import ProjectFeed from '../ProjectFeed/ProjectFeed';
 //import UserHome from '../UserHome/UserHome';
 import AddProject from '../ProjectFeed/AddProject';
@@ -35,6 +35,7 @@ export default class App extends Component {
         <main className='App'>
         <Switch>
           <Route exact path={'/'} component={LandingPage} />
+          <Route exact path={'/login'} component={LoginForm} />
           <Route path={'/feed'} render={(props) => <ProjectFeed {...props} arrProjects={this.state.projects} setHotdog={this.setProjects}/>} />
           {/* <Route path={'/home'} component={UserHome} /> */}
           <Route path={'/addproject'} component={AddProject} />
