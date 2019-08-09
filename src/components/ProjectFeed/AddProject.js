@@ -1,4 +1,5 @@
 import React from 'react'
+import './AddProject.css'
 
 export default class AddProject extends React.Component {
   constructor() {
@@ -65,7 +66,8 @@ export default class AddProject extends React.Component {
       : '';
 
     return (
-      <>
+      <div className="fullScreen">
+
       <h3>Add a new project!</h3>
       {error}
       <form onSubmit={this.handleSubmit}>
@@ -85,7 +87,8 @@ export default class AddProject extends React.Component {
         <button>Submit</button>
         
       </form>
-      </>
+
+      </div>
     )
   }
 }

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './Landing.css'
 
 export default class Landing extends Component {
 
   render() {
     return (
-    <>
+    <div className="fullScreen">
       <h1>Welcome to Makers Place</h1>
       <p>This app is a place where Makers, DIY'ers, and creators to share
         their projects. This is a place for inspiration and creativity.
@@ -16,7 +17,7 @@ export default class Landing extends Component {
       <Link to='/feed'>
         <button>Continue</button>
       </Link>
-    </>
+    </div>
     )
   }
 }

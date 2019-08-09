@@ -1,4 +1,19 @@
-.ProjectFeedItem_img_url {
+/* .ProjectFeedItem_img_url {
   width : 100%;
   max-width: 400px;
+  margin: auto;
+} */
+
+img {
+  width : 100%;
+  max-width: 400px;
+  margin: auto;
+  border: solid black 2px;
+}
+
+.ProjectFeedItem_details {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
