@@ -9,7 +9,7 @@ export default class ProjectFeed extends Component {
     .then(res => 
       res.json())
       .then(data => {
-        this.props.setHotdog(data)
+        this.props.setProjectsVar(data)
       })
       .catch(error => {
         console.log(error);
@@ -22,7 +22,8 @@ export default class ProjectFeed extends Component {
     <>
       <h1>Makers Place Feed</h1>
       
-        {this.props.arrProjects.map(proj => {
+        {
+          this.props.arrProjects.map(proj => {
           return (
             <div className='ProjectFeedItem_details' key={proj.id}>
               
