@@ -8,7 +8,6 @@ import RegistrationPage from '../RegistrationPage/RegistrationPage';
 // import LoginForm from '../LoginForm/LoginForm';
 import LoginPage from '../LoginPage/LoginPage';
 import ProjectFeed from '../ProjectFeed/ProjectFeed';
-import UserHome from '../UserHome/UserHome';
 import AddProject from '../ProjectFeed/AddProject';
 import './App.css';
 
@@ -40,14 +39,12 @@ export default class App extends Component {
 
           <PublicOnlyRoute path={'/register'} component={RegistrationPage} />
 
-          <Route path={'/feed'} render={(props) => 
-            <ProjectFeed {...props} arrProjects={this.state.projects} 
-              setProjectsVar={this.setProjects}
-            />
-          } 
+          <Route path={'/feed'} 
+            render={(props) => 
+              <ProjectFeed {...props} arrProjects={this.state.projects} 
+                setProjectsVar={this.setProjects}/>
+            }
           />
-
-          <PrivateRoute path={'/home'} component={UserHome} />
 
           <PrivateRoute path={'/addproject'} component={AddProject} />
 

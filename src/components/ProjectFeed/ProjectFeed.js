@@ -20,8 +20,6 @@ export default class ProjectFeed extends Component {
     console.log(this.props.arrProjects);
     return (
     <>
-      <h1>Makers Place Feed</h1>
-      
         {
           this.props.arrProjects.map(proj => {
           return (
@@ -35,8 +33,6 @@ export default class ProjectFeed extends Component {
                 <img src={proj.img_url} alt="Smiley face"/> 
               </div>
 
-                <div className='ProjectFeedItem_rate'>
-                </div>
             </div>
           )
         })

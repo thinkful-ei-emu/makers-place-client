@@ -8,12 +8,16 @@
 .Textarea {
   border: 1px solid #ddd;
   display: block;
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-bottom: 10px;
-  padding: 10px;
-  text-align: left;
+  padding: 10px 0px;
+  text-align: center;
   width: 100%;
   border-radius: 4px;
+}
+
+label {
+  font-size: 20px;
 }
 
 .Input::placeholder,
@@ -32,6 +36,11 @@
   border-radius: 4px;
   padding: 8px 12px;
   font-weight: bold;
+  height: 100%;
+  margin: 15px;
+}
+Button:hover {
+  color: lightgrey;
 }
 
 .Required {
@@ -48,3 +57,4 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+ 

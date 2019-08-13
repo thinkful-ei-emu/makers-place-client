@@ -1,19 +1,60 @@
-/* .ProjectFeedItem_img_url {
-  width : 100%;
-  max-width: 400px;
-  margin: auto;
-} */
-
 img {
   width : 100%;
   max-width: 400px;
   margin: auto;
-  border: solid black 2px;
+  border: solid black 4px;
+  border-radius: 5%;
+}
+
+.addSubmitButton {
+  border: 1px solid #aaa;
+  background-color: #eee;
+  font-size: 1.1em;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-weight: bold;
+}
+.addButton {
+  border: 1px solid #aaa;
+  background-color: #eee;
+  font-size: .5em;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-weight: bold;
 }
 
 .ProjectFeedItem_details {
+  border: 2px white solid;
+  border-radius: 20px;
+  margin: 35px;
+  background-color: lightgray;
+  align-content: space-between;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 40px;
   padding-bottom: 40px;
+  background-image: url('https://wallpapercave.com/wp/02D3ZWP.jpg');
+  background-size: 125%;
+  color: white;
 }
+
+.ProjectFeedItem_title {
+  border-radius: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ProjectFeedItem_description {
+  padding: 50px 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: left;
+}
+
+.ProjectFeedItem_img_url {
+  padding: 15px 0px;
+}
+ 

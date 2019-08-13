@@ -1,6 +1,7 @@
 import React from 'react';
 import './AddProject.css';
 import TokenService from '../../services/token-service';
+import { Input } from '../Utils/Utils';
 
 export default class AddProject extends React.Component {
   constructor() {
@@ -75,18 +76,18 @@ export default class AddProject extends React.Component {
       <form onSubmit={this.handleSubmit}>
         
         <label htmlFor='Title'>Title:</label><br/>
-        <input id='formTitle' name='title' type='text' value={this.state.title}
-        onChange={e => this.titleChanged(e.target.value)} required/><br/>
+        <Input id='formTitle' name='title' type='text' value={this.state.title}
+        onChange={e => this.titleChanged(e.target.value)} required></Input><br/>
         
         <label htmlFor='description'>Description:</label><br/>
-        <input id='formDescription' name='description'type='text' value={this.state.description}
-        onChange={e => this.descriptionChanged(e.target.value)} required /><br/>
+        <Input id='formDescription' name='description'type='text' value={this.state.description}
+        onChange={e => this.descriptionChanged(e.target.value)} required></Input><br/>
 
         <label htmlFor='img_url'>Image URL</label><br/>
-        <input id='formIMG' name='img_url'type='url' value={this.state.img_url}
-        onChange={e => this.imgURLChanged(e.target.value)} required /><br/>
+        <Input id='formIMG' name='img_url'type='url' value={this.state.img_url}
+        onChange={e => this.imgURLChanged(e.target.value)} required></Input><br/>
 
-        <button>Submit</button>
+        <button className='addSubmitButton'>Submit</button>
         
       </form>
 

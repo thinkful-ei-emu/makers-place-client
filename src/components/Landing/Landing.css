@@ -1,6 +1,10 @@
 .fullScreen {
   height: 100vh;
-  background-color: lightskyblue;
+  background-color: rgb(255, 255, 255);
   padding-left: 50px;
   padding-right: 50px;
-}
+  padding-top: 100px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: inherit;
+} 

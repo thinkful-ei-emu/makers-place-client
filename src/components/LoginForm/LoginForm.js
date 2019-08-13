@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import TokenService from '../../services/token-service';
 import AuthApiService from '../../services/makers-auth-service';
 import { Button, Input } from '../Utils/Utils'
-// import './LoginForm.css';
+import { Link } from 'react-router-dom';
+import './LoginForm.css';
 
 export default class LoginForm extends Component {
   static defaultProps = {
@@ -33,9 +33,19 @@ export default class LoginForm extends Component {
       })
     }
 
+    handleErrorMessage() {
+      return (
+        <div>
+          <p>
+            {this.state.error}
+          </p>
+        </div>
+      )
+    }
+
   render() {
     return (
-    <div className="fullscreen">
+    <div className="fullScreen">
       <form className='LoginForm' onSubmit={this.handleSubmitJwtAuth}>
 
       <div className='user_name'>
@@ -64,13 +74,11 @@ export default class LoginForm extends Component {
         </Input><br/>
       </div>
 
-        <Button type='Submit'>Login</Button>
-      
-      </form>
+      { this.state.error && this.handleErrorMessage() }
 
-      <Link to='/feed'>
-        <button>Skip</button>
-      </Link>
+        <Button type='Submit'>Login</Button>
+        <h1><Link className='Register'to ='/register'>Not a user yet? Register here</Link></h1>
+      </form>
 
     </div>
     )

@@ -1,8 +1,7 @@
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh;
+.header-nav {
+  border-bottom: 2px solid white;
+  min-height: 8vh;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
@@ -13,5 +12,26 @@
 
 a {
   color: white;
-  font-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
+.App_Header {
+  background: black;
+  background-image: url('https://wallpapercave.com/wp/02D3ZWP.jpg');
+  background-size: 50%;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  height: 60px;
+}
+
+.logout-container {
+  margin-left: 20px;
 }

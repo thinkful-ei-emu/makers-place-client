@@ -1,4 +1,6 @@
 .fullScreen {
+  border: 1px solid black;
   height: 100vh;
-  background-color: lightskyblue;
+  background-color: white;
 }
+

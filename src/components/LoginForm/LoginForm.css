@@ -1,3 +1,23 @@
-.fullscreen {
+.fullScreen {
   height: 100vh;
+}
+
+.LoginForm {
+  display: row;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Input {
+  border: 2px solid grey;
+}
+
+.Input:focus {
+  border: 2px solid #282c34;
+}
+
+.Register {
+  color: Grey;
 }
