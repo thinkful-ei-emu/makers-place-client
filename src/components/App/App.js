@@ -5,7 +5,6 @@ import PrivateRoute from '../Utils/PrivateRoute'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import LandingPage from '../Landing/Landing';
 import RegistrationPage from '../RegistrationPage/RegistrationPage';
-// import LoginForm from '../LoginForm/LoginForm';
 import LoginPage from '../LoginPage/LoginPage';
 import ProjectFeed from '../ProjectFeed/ProjectFeed';
 import AddProject from '../ProjectFeed/AddProject';

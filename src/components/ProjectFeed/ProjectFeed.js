@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import './ProjectFeed.css';
 
 export default class ProjectFeed extends Component {
@@ -17,7 +16,6 @@ export default class ProjectFeed extends Component {
   }
 
   render() {
-    console.log(this.props.arrProjects);
     return (
     <>
         {

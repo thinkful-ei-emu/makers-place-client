@@ -13,7 +13,6 @@ export default class LoginForm extends Component {
   state = { error: null }
 
   handleSubmitJwtAuth = ev => {
-    console.log('login ran');
     ev.preventDefault()
     this.setState({ error: null })
     const { user_name, password } = ev.target

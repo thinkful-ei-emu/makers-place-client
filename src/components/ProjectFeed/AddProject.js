@@ -1,7 +1,7 @@
 import React from 'react';
-import './AddProject.css';
 import TokenService from '../../services/token-service';
 import { Input } from '../Utils/Utils';
+import './AddProject.css';
 
 export default class AddProject extends React.Component {
   constructor() {
