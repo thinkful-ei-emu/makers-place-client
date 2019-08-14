@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "alias": "https://coreys-makers-place-app.now.sh",
+  "name": "makers-place-client",
+  "routes": [
+      {
+        "src": "^/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": ".*",
+        "dest": "/index.html"
+      }
+  ]
+}

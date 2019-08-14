@@ -1,6 +1,7 @@
 import React from 'react';
 import TokenService from '../../services/token-service';
 import { Input } from '../Utils/Utils';
+import config from '../../config'
 import './AddProject.css';
 
 export default class AddProject extends React.Component {
@@ -37,7 +38,7 @@ export default class AddProject extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const url = 'http://localhost:8000/api/projects';
+    const url = `${config.API_ENDPOINT}/api/projects`;
     const newProj = {title: this.state.title, description: this.state.description, img_url: this.state.img_url}
     const options = {
       method: 'POST',

@@ -26,7 +26,7 @@ img {
 .ProjectFeedItem_details {
   border: 2px white solid;
   border-radius: 20px;
-  margin: 35px;
+  margin-top: 75px;
   background-color: lightgray;
   align-content: space-between;
   width: 60%;
@@ -57,4 +57,7 @@ img {
 .ProjectFeedItem_img_url {
   padding: 15px 0px;
 }
- 
+
+.App-container {
+  background: black;
+}

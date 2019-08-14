@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import config from '../../config'
 import './ProjectFeed.css';
 
 export default class ProjectFeed extends Component {
 
   componentDidMount() {
-    fetch('http://localhost:8000/api/projects')
+    console.log(config.API_ENDPOINT)
+    fetch(`${config.API_ENDPOINT}/api/projects`)
     .then(res => 
       res.json())
       .then(data => {
