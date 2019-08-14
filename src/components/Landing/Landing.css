@@ -1,10 +1,18 @@
-.fullScreen {
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
+.landingScreen {
+  height: 120vh;
+  color: white;
+  background-color: black;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 100px;
+  padding-top: 30px;
   font-size: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: inherit;
+  line-height: 2.5;
 } 
+
+form {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 20px 15px 20px 11px;
+}

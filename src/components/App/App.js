@@ -30,7 +30,7 @@ export default class App extends Component {
           <Header/>
         </header>
 
-        <main className='App'>
+        <main className='App-container'>
         <Switch>
 
           <Route exact path={'/'} component={LandingPage} />

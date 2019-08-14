@@ -45,7 +45,7 @@ export default class LoginForm extends Component {
 
   render() {
     return (
-    <div className="fullScreen">
+    <div className="loginScreen">
       <form className='LoginForm' onSubmit={this.handleSubmitJwtAuth}>
 
       <div className='user_name'>
@@ -77,10 +77,10 @@ export default class LoginForm extends Component {
       { this.state.error && this.handleErrorMessage() }
 
         <Button type='Submit'>Login</Button>
-        <h1><Link className='Register'to ='/register'>Not a user yet? Register here</Link></h1>
+        <h1><Link className='Register'to ='/register'>Not a user yet? Register here!</Link></h1>
       </form>
 
     </div>
     )
   }
-}
+} 

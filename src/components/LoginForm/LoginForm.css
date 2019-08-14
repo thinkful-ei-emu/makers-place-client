@@ -1,5 +1,13 @@
-.fullScreen {
+.loginScreen {
   height: 100vh;
+  color: white;
+  background-color: black;
+  padding-left: 50px;
+  padding-right: 70px;
+  padding-top: 50px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: inherit;
 }
 
 .LoginForm {
@@ -8,6 +16,8 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-image: url('https://wallpapercave.com/wp/02D3ZWP.jpg');
+  background-size: 50%;
 }
 
 .Input {
@@ -20,4 +30,4 @@
 
 .Register {
   color: Grey;
-}
+} 

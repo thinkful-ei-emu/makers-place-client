@@ -1,6 +1,27 @@
-.fullScreen {
-  border: 1px solid black;
+.addScreen {
   height: 100vh;
-  background-color: white;
+   color: white;
+   background-color: black;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 100px;
+   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-style: inherit;
+   /*new*/
+   
 }
 
+.addForm {
+  background-image: url('https://wallpapercave.com/wp/02D3ZWP.jpg');
+  background-size: 50%;
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+
+.addNewProject {
+ color: white;
+ padding-bottom: 50px;
+ font-size: 35px;
+}

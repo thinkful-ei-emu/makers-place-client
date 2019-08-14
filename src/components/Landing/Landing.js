@@ -6,10 +6,10 @@ export default class Landing extends Component {
 
   render() {
     return (
-    <div className="fullScreen">
+    <div className="landingScreen">
       <h1>Welcome to Makers Place!</h1>
       <p>This app is a place where Makers, DIY'ers, and creators can share
-        their projects. This is a place for inspiration and creativity.</p>
+        their projects.<br/> This is a place for inspiration and creativity.</p><br/>
         
         <section>
         Testing Instructions:<br/>
@@ -31,6 +31,7 @@ export default class Landing extends Component {
       <Link to='/login'>
         <button>Continue</button>
       </Link>
+      
     </div>
     )
   }

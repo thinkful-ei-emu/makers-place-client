@@ -69,28 +69,30 @@ export default class AddProject extends React.Component {
       : '';
 
     return (
-      <div className="fullScreen">
+      <div className="addScreen">
 
-      <h3>Add a new project!</h3>
-      {error}
-      <form onSubmit={this.handleSubmit}>
-        
-        <label htmlFor='Title'>Title:</label><br/>
-        <Input id='formTitle' name='title' type='text' value={this.state.title}
-        onChange={e => this.titleChanged(e.target.value)} required></Input><br/>
-        
-        <label htmlFor='description'>Description:</label><br/>
-        <Input id='formDescription' name='description'type='text' value={this.state.description}
-        onChange={e => this.descriptionChanged(e.target.value)} required></Input><br/>
+        <h2 className='addNewProject'>Add a new project!</h2>
+        {error}
 
-        <label htmlFor='img_url'>Image URL</label><br/>
-        <Input id='formIMG' name='img_url'type='url' value={this.state.img_url}
-        onChange={e => this.imgURLChanged(e.target.value)} required></Input><br/>
+        <div>
+          <form className='addForm' onSubmit={this.handleSubmit}>
+            
+            <label htmlFor='Title'>Title:</label><br/>
+            <Input id='formTitle' name='title' type='text' value={this.state.title}
+            onChange={e => this.titleChanged(e.target.value)} required></Input><br/>
+            
+            <label htmlFor='description'>Description:</label><br/>
+            <Input id='formDescription' name='description'type='text' value={this.state.description}
+            onChange={e => this.descriptionChanged(e.target.value)} required></Input><br/>
 
-        <button className='addSubmitButton'>Submit</button>
-        
-      </form>
+            <label htmlFor='img_url'>Image URL</label><br/>
+            <Input id='formIMG' name='img_url'type='url' value={this.state.img_url}
+            onChange={e => this.imgURLChanged(e.target.value)} required></Input><br/>
 
+            <button className='addSubmitButton'>Submit</button>
+            
+          </form>
+        </div>
       </div>
     )
   }
