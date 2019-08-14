@@ -1,5 +1,5 @@
 .loginScreen {
-  height: 100vh;
+  height: 100%;
   color: white;
   background-color: black;
   padding-left: 50px;
@@ -11,13 +11,13 @@
 }
 
 .LoginForm {
-  display: row;
-  justify-content: center;
+  /* display: row;
+  justify-content: center; */
+  background-image: url('https://wallpapercave.com/wp/02D3ZWP.jpg');
+  background-size: 50%;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('https://wallpapercave.com/wp/02D3ZWP.jpg');
-  background-size: 50%;
 }
 
 .Input {
