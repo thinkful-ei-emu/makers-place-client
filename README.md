@@ -1,12 +1,12 @@
-##App name 
+## App name 
 Makers Place
 
 
-##Link to live app 
+## Link to live app 
 https://coreys-makers-place-app.now.sh
 
 
-##Docs 
+## Docs 
 GET /api/feed 
 {
   title: "New Project",
@@ -21,7 +21,7 @@ POST /api/users
 }
 
 
-##Screenshots
+## Screenshots
 ![Landing Page](https://i.imgur.com/JO92kSz.png)
 
 ![Login Page](blob:https://imgur.com/a7ea1a3d-ce6c-4c7d-96f3-e981bf8969c0)
@@ -33,11 +33,11 @@ POST /api/users
 ![Add Project Page](blob:https://imgur.com/44ae84f9-ff7f-4eda-ac46-49396e2495ff)
 
 
-##Summary 
+## Summary 
 To Use this apllication you must register a new user or login with an existing user. You will then be taken to the main feed page which display a list of all projects uploaded to the database. From there, if logged in you can add a project of your own with the 'Add Project' button.
 
 
-#Tech used 
+## Tech used 
 Javascript, Html5, CSS3, React, Node.js, Express, PostgreSQL, Knex.
   Security: XSS, Bcrypt, Helmet, Cors.
   Testing: Supertest, Mocha, Chai, Nodemon. 

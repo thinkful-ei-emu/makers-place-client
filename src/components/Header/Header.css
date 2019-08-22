@@ -27,11 +27,57 @@ a:hover {
 
 .nav-buttons {
   display: flex;
-  justify-content: center;
-  width: 25%;
+  justify-content: space-between;
   height: 60px;
+  width: 50%;
+  white-space: nowrap;
 }
 
-.logout-container {
-  margin-left: 20px;
+.logout-container, .addProject-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px 0 0px;
+  width: 50%;
+}
+
+.logout-container{
+  display: flex;
+  
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .header-nav {
+    border-bottom: 2px solid white;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 0 5px 0 5px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: lightgrey;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    
+  }
+
+  .logout-container, .addProject-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px 0 0px;
+    width: 100%;
+    
+  }
 }

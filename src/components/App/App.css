@@ -4,3 +4,12 @@
   height: 100vh;
   width: 100%;
 } 
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .App {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+  } 
+  
+}

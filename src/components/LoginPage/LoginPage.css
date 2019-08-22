@@ -3,3 +3,12 @@
   font-size: 35px;
   padding-top: 90px;
 }
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .loginTitle {
+    color: white;
+    font-size: 35px;
+    padding-top: 0px;
+  }
+  
+}

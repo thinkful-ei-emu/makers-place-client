@@ -42,7 +42,7 @@ export default class RegistrationForm extends Component {
           
           <div className='user_name'>
             <label htmlFor='RegistrationForm__user_name'>
-              User name <Required />
+              Username <Required />
             </label>
             <Input
               name='user_name'
