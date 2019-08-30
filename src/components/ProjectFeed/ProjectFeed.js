@@ -5,7 +5,6 @@ import './ProjectFeed.css';
 export default class ProjectFeed extends Component {
 
   componentDidMount() {
-    console.log(config.API_ENDPOINT)
     fetch(`${config.API_ENDPOINT}/api/projects`)
     .then(res => 
       res.json())

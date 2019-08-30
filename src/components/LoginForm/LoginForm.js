@@ -32,12 +32,10 @@ export default class LoginForm extends Component {
       })
     }
 
-    handleErrorMessage() {
+    handleErrorMessage = () => {
       return (
         <div>
-          <p>
             {this.state.error}
-          </p>
         </div>
       )
     }
@@ -73,7 +71,7 @@ export default class LoginForm extends Component {
         </Input><br/>
       </div>
 
-      { this.state.error && this.handleErrorMessage() }
+      { this.state.error && this.handleErrorMessage }
 
         <Button type='Submit'>Login</Button>
         <h1><Link className='Register'to ='/register'>Not a user yet? Register here!</Link></h1>
